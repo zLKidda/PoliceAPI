@@ -60,7 +60,12 @@ def main():
     jdata4 = readJsonUrl(URL4)
     print(jdata4)
     #       https://data.police.uk/api/stops-street?lat=53.7264510190582&lng=-2.64514267543159
-
+    URL5 =  "https://data.police.uk/api/crimes-street/all-crime?lat=" + str(lat) + "&lng=" + str(long)
+    #       ttps://data.police.uk/api/crimes-street/all-crime?lat=52.629729&lng=-1.131592&date=2013-01
+    print("STREET CRIME (1 mile radius of postcode)")
+    print(URL5)
+    jdata5 = readJsonUrl(URL5)
+    print(jdata5)
 
 
 
